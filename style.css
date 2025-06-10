@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
@@ -15,13 +14,18 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-
 body,
-h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
 }
-
 
 body {
   min-height: 100vh;
@@ -30,55 +34,79 @@ body {
   font-family: inherit;
 }
 
-
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
-
-h1, h2,
-h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
 }
-
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
-
-img, picture {
+img,
+picture {
   max-width: 100%;
   display: block;
 }
 
-
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
 }
 
-input:focus, textarea:focus, select:focus {
- outline: 2px solid #007bff;
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #007bff;
 }
-
 
 textarea:not([rows]) {
   min-height: 10em;
 }
 
-
 :target {
   scroll-margin-block: 5ex;
 }
 
-
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
+}
+
+:root {
+  --clr-Soft-orange: hsl(35, 77%, 62%);
+  --clr-Soft-red: hsl(5, 85%, 63%);
+
+  --clr-Off-white: hsl(36, 100%, 99%);
+  --clr-Grayish-blue: hsl(233, 8%, 79%);
+  --clr-Dark-grayish-blue: hsl(236, 13%, 42%);
+  --clr-Very-dark-blue: hsl(240, 100%, 5%);
+
+  --fs-p: 15px;
+  --ff: "Inter", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-800: 800;
+}
+
+body {
+  font-family: var(--ff);
 }
 
 @media screen and (max-width: 375px) {
