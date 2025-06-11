@@ -107,7 +107,39 @@ ol[role="list"] {
 
 body {
   font-family: var(--ff);
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-@media screen and (max-width: 375px) {
+header {
+  display: flex;
+}
+
+/* primary naviagtion */
+.logo {
+  margin: 2rem;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-navigation {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+@media (max-width: 35em) {
+  .primary-navigation {
+    position: fixed;
+    inset: 0 0 0 30%;
+    background-color: var(--clr-Very-dark-blue);
+    color: aliceblue;
+  }
 }
