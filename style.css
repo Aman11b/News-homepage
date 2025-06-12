@@ -108,6 +108,7 @@ ol[role="list"] {
 body {
   font-family: var(--ff);
   overflow-x: hidden;
+  padding: 0;
 }
 
 .wrapper{
@@ -174,6 +175,7 @@ header {
 @media (max-width: 35em) {
   .wrapper{
     padding: 1rem;
+    overflow: hidden;
   }
   
   .logo{
